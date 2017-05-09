@@ -3,7 +3,16 @@ I was taking to long to prepare the environment every time I had to study someth
 
 If you are new to Kafka, I strongly recommend going through [kafka documentation](https://kafka.apache.org/documentation/), you can also take a look in [this course](https://www.youtube.com/watch?v=gg-VwXSRnmg&list=PLkz1SCf5iB4enAR00Z46JwY9GGkaS2NON), which is basic but extremely helpful.
 
-To make it more useful, I also prepared the Zookeeper and Kafka to be both managed by [systemd](https://www.freedesktop.org/wiki/Software/systemd/)
+To make it more useful, I also prepared the Zookeeper and Kafka to be both managed by [systemd](https://www.freedesktop.org/wiki/Software/systemd/), which means you can manage the services like this:
+```console
+systemctl start zookeeper
+systemctl stop zookeeper
+systemctl restart zookeeper
+
+systemctl start kafka
+systemctl stop kafka
+systemctl restart kafka
+```
 
 ## Prerequisites
 
