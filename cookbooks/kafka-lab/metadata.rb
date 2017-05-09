@@ -1,0 +1,8 @@
+name             'kafka-lab'
+maintainer       'Fabio G. Martins'
+maintainer_email 'fabiogoma@gmail.com'
+license          'Apache 2.0'
+description      'Installs/Configures Zookeeper Lab'
+long_description 'Installs/Configures Zookeeper Lab'
+version          '0.1.0'
+depends          'commons'
