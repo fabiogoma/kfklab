@@ -55,7 +55,7 @@ execute 'change permissions at the destination' do
 end
 
 zookeeper_server_list = ''
-node['zookeeper_server_list'].each_with_index do |zookeeper_host, index|
+node['zookeeper_server_list'].each do |zookeeper_host|
   zookeeper_server_list += "#{zookeeper_host}.local:2181,"
 end
 
