@@ -11,6 +11,7 @@ Group=kafka
 Environment=JAVA_HOME=/etc/alternatives/jre
 ExecStart=/opt/<%= @kafka_folder %>/bin/kafka-server-start.sh /opt/<%= @kafka_folder %>/config/server.properties
 ExecStop=/opt/<%= @kafka_folder %>/bin/kafka-server-stop.sh
+Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
